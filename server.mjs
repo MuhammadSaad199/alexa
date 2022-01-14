@@ -5,7 +5,7 @@ import { ExpressAdapter } from 'ask-sdk-express-adapter';
 import mongoose from 'mongoose';
 import axios from "axios";
 
-mongoose.connect('mongodb+srv://dbuser:dbpassword@cluster0.nr4e4.mongodb.net/chatbotdb?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://saad:karachi123@cluster0.bvprn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority');
 
 const Usage = mongoose.model('Usage', {
   skillName: String,
@@ -40,7 +40,7 @@ const LaunchRequestHandler = {
 
     
 
-    const speakOutput = 'Welcome to Talk to Haseeb Introduction skill';
+    const speakOutput = 'Welcome to first food app';
     const reprompt = 'I am your virtual assistant. you can ask for the menu';
 
     return handlerInput.responseBuilder
@@ -59,7 +59,7 @@ const introHandler = {
   
       
   
-      const speakOutput = 'Your Name is Haseeb and you are soooooooooooooooooooooooo Handsome';
+      const speakOutput = 'food app';
       const reprompt = 'I am your virtual assistant. you can ask for the menu';
   
       return handlerInput.responseBuilder
